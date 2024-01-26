@@ -1,0 +1,24 @@
+{
+    "name": "dotdigital/dotdigital-magento2-extension-amqp",
+    "description": "Dotdigital for Magento Ampq Support",
+    "license": "MIT",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require": {
+        "php": "^7.4||^8.0",
+        "dotdigital/dotdigital-magento2-extension": "^4.24.0",
+        "magento/framework": ">=102 <104"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Dotdigitalgroup\\Amqp\\": ""
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="ddg.sync.integration"
+              queue="ddg.sync.queue"
+              handler="Dotdigitalgroup\Email\Model\Queue\Sync\IntegrationInsightsConsumer::process"
+              connection="amqp" />
+    <consumer name="ddg.sync.automation"
+              queue="ddg.sync.automation.queue"
+              handler="Dotdigitalgroup\Email\Model\Queue\Sync\Automation\AutomationConsumer::process"
+              connection="amqp"/>
+    <consumer name="ddg.newsletter.unsubscribe"
+              queue="ddg.unsubscribe.queue"
+              handler="Dotdigitalgroup\Email\Model\Queue\Newsletter\UnsubscriberConsumer::process"
+              connection="amqp"/>
+    <consumer name="ddg.newsletter.resubscribe"
+              queue="ddg.resubscribe.queue"
+              handler="Dotdigitalgroup\Email\Model\Queue\Newsletter\ResubscribeConsumer::process"
+              connection="amqp"/>
+    <consumer name="ddg.contact.email_update"
+              queue="ddg.email_update.queue"
+              handler="Dotdigitalgroup\Email\Model\Queue\Customer\EmailUpdateConsumer::process"
+              connection="amqp"/>
+    <consumer name="ddg.sales.cart_phase_update"
+              queue="ddg.cart_phase_update.queue"
+              handler="Dotdigitalgroup\Email\Model\Queue\Sales\CartPhaseUpdateConsumer::process"
+              connection="amqp"/>
+</config>

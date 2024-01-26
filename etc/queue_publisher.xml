@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="ddg.sync.integration">
+        <connection name="amqp" disabled="false" />
+        <connection name="db" disabled="true" />
+    </publisher>
+    <publisher topic="ddg.sync.automation">
+        <connection name="amqp" disabled="false" />
+        <connection name="db" disabled="true" />
+    </publisher>
+    <publisher topic="ddg.newsletter.unsubscribe">
+        <connection name="amqp" disabled="false" />
+        <connection name="db"  disabled="true" />
+    </publisher>
+    <publisher topic="ddg.newsletter.resubscribe">
+        <connection name="amqp" disabled="false" />
+        <connection name="db" disabled="true"/>
+    </publisher>
+    <publisher topic="ddg.contact.email_update">
+        <connection name="amqp" disabled="false" />
+        <connection name="db" disabled="true" />
+    </publisher>
+    <publisher topic="ddg.sales.cart_phase_update">
+        <connection name="amqp" disabled="false" />
+        <connection name="db" disabled="true" />
+    </publisher>
+</config>

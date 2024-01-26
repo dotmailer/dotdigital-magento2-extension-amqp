@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="magento" type="topic" connection="amqp">
+        <binding id="dotdigitalIntegrationInsightSyncBinding" topic="ddg.sync.integration" destination="ddg.sync.queue" destinationType="queue"/>
+        <binding id="dotdigitalAutomationBinding" topic="ddg.sync.automation" destination="ddg.sync.automation.queue" destinationType="queue"/>
+        <binding id="dotdigitalNewsletterUnsubscribeBinding" topic="ddg.newsletter.unsubscribe" destination="ddg.unsubscribe.queue" destinationType="queue"/>
+        <binding id="dotdigitalNewsletterResubscribeBinding" topic="ddg.newsletter.resubscribe" destination="ddg.resubscribe.queue" destinationType="queue"/>
+        <binding id="dotdigitalContactEmailUpdateBinding" topic="ddg.contact.email_update" destination="ddg.email_update.queue" destinationType="queue"/>
+        <binding id="dotdigitalCartPhaseUpdateBinding" topic="ddg.sales.cart_phase_update" destination="ddg.cart_phase_update.queue" destinationType="queue"/>
+    </exchange>
+</config>
