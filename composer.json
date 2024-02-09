@@ -1,6 +1,6 @@
 {
     "name": "dotdigital/dotdigital-magento2-extension-amqp",
-    "description": "Dotdigital for Magento Ampq Support",
+    "description": "Dotdigital for Magento 2: AMQP module",
     "license": "MIT",
     "version": "1.0.0",
     "type": "magento2-module",
