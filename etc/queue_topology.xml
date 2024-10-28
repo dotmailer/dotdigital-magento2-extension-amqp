@@ -3,6 +3,7 @@
     <exchange name="magento" type="topic" connection="amqp">
         <binding id="dotdigitalIntegrationInsightSyncBinding" topic="ddg.sync.integration" destination="ddg.sync.queue" destinationType="queue"/>
         <binding id="dotdigitalAutomationBinding" topic="ddg.sync.automation" destination="ddg.sync.automation.queue" destinationType="queue"/>
+        <binding id="dotdigitalNewsletterSubscribeBinding" topic="ddg.newsletter.subscription" destination="ddg.subscription.queue" destinationType="queue"/>
         <binding id="dotdigitalNewsletterUnsubscribeBinding" topic="ddg.newsletter.unsubscribe" destination="ddg.unsubscribe.queue" destinationType="queue"/>
         <binding id="dotdigitalNewsletterResubscribeBinding" topic="ddg.newsletter.resubscribe" destination="ddg.resubscribe.queue" destinationType="queue"/>
         <binding id="dotdigitalContactEmailUpdateBinding" topic="ddg.contact.email_update" destination="ddg.email_update.queue" destinationType="queue"/>

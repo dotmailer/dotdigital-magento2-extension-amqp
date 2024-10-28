@@ -24,4 +24,8 @@
               queue="ddg.cart_phase_update.queue"
               handler="Dotdigitalgroup\Email\Model\Queue\Sales\CartPhaseUpdateConsumer::process"
               connection="amqp"/>
+    <consumer name="ddg.newsletter.subscription"
+              queue="ddg.subscription.queue"
+              handler="Dotdigitalgroup\Email\Model\Queue\Newsletter\SubscriptionConsumer::process"
+              connection="amqp" />
 </config>

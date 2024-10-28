@@ -8,6 +8,10 @@
         <connection name="amqp" disabled="false" />
         <connection name="db" disabled="true" />
     </publisher>
+    <publisher topic="ddg.newsletter.subscription">
+        <connection name="amqp" disabled="false" />
+        <connection name="db" disabled="true" />
+    </publisher>
     <publisher topic="ddg.newsletter.unsubscribe">
         <connection name="amqp" disabled="false" />
         <connection name="db"  disabled="true" />

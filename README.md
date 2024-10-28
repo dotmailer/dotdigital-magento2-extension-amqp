@@ -19,5 +19,10 @@ bin/magento setup:upgrade
 
 ## Changelog
 
+### 1.1.0
+
+##### What's new
+- We added compatibility with a new queue definition in the Dotdigitalgroup_Email module.
+
 ### 1.0.0
 - Initial release
